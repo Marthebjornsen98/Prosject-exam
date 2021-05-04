@@ -1,0 +1,30 @@
+/* FONTS */
+:root{
+    --bold: 700;
+    --semi-bold: 600;
+    --line-height: 1.5rem;
+}
+
+/* DESIGN ELEMENTS */
+:root{
+    --border-radius: 10px;
+    --hover-up: translateY(-4px);
+    --hover-right: translateX(4px);
+    --hover-left: translateX(-4px);
+    --transition: 0.3s;
+    --border: solid 3px rgba(0, 0, 0, 0.1);
+}
+
+/* OPACITY */
+:root{
+    --box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* COLORS */
+:root{
+    --black: #2B2F30;
+    --white: #FFFFFF;
+    --beige: #F4ECDC;
+    --light-brown: #E4CCAC;
+    --dark-brown: #4B3B32;
+}
