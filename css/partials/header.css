@@ -1,5 +1,5 @@
 .nav__container {
-    width: 90%;
+    width: 88%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,4 +23,21 @@
 .nav__item--white {
     color: var(--white);
     font-size: 1.125rem;
+}
+
+.nav__item--white-bold {
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: var(--bold);
+}
+
+.nav__item--black {
+    color: var(--black);
+    font-size: 1.125rem;
+}
+
+.nav__item--black-bold {
+    color: var(--black);
+    font-size: 1.125rem;
+    font-weight: var(--bold);
 }

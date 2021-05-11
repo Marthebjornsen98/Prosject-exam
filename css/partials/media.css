@@ -1,0 +1,126 @@
+/* HEADER SECTION */
+@media (max-width: 991px){
+    /* Tablet */
+
+    .nav__list {
+        width: 60%;
+        margin-right: 50px;
+    }
+}
+
+
+/* HOME PAGE */
+@media (max-width: 991px){
+    /* Tablet */
+
+
+}
+
+/* ABOUT PAGE */
+@media (max-width: 1920px){
+    /* Wide screen */
+
+    .content {
+        max-width: 1440px;
+    }
+
+    .beige-box {
+        max-width: 1440px;
+    }
+
+    .social-media__icon {
+        width: 30%;
+    }
+
+    .social-media__insta,
+    .social-media__facebook,
+    .social-media__youtube,
+    .social-media__linkedin {
+        width: 50%;
+        height: 300px;
+    }
+}
+@media (max-width: 1440px){
+    /* Laptop */
+
+    .social-media__insta,
+    .social-media__facebook,
+    .social-media__youtube,
+    .social-media__linkedin {
+        height: 250px;
+    }
+}
+
+@media (max-width: 991px){
+    /* Tablet */
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 6rem;
+        font-weight: var(--bold);
+        line-height: 7rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: var(--bold);
+    }
+
+    .about-me__img--container {
+        margin-top: 50px;
+    }
+
+    .beige-box__container {
+        height: 650px;
+    }
+
+    .beige-box {
+        flex-direction: column;
+        height: 550px;
+        justify-content: space-between;
+    }
+
+    .social-media__boxes {
+        flex-direction: column;
+    }
+
+    .social-media__two {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .social-media__insta,
+    .social-media__facebook,
+    .social-media__youtube,
+    .social-media__linkedin {
+        width: 48%;
+        height: 270px;
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 767px){
+    /* Tablet */
+    h1 {
+        font-size: 3.125rem;
+        line-height: 4.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .why-interior {
+        flex-direction: column;
+    }
+
+    .why-interior__content {
+        width: 100%;
+    }
+
+}

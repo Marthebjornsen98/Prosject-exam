@@ -11,13 +11,15 @@
 body {
     background-color: var(--beige);
     color: var(--black);
-    background-image: url(../../img/texture.png);
+    background-image: url(../../img/texture.svg);
+    background-repeat: repeat-y repeat-x;
 }
 
 /* Font tags */
 h1 {
     font-size: 8.125rem;
     font-weight: var(--bold);
+    line-height: 8rem;
 }
 
 h2 {
@@ -44,7 +46,15 @@ h3 {
     display: block;
 }
 
-.home__content {
+.next-paragraph {
+    margin-top: 20px;
+}
+
+.content {
     max-width: 1250px;
-    margin: 0px 50px 0px 200px;
+    margin: 0px 100px 0px 200px;
+}
+
+.space-between {
+    margin-top: 150px;
 }
