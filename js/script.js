@@ -11,22 +11,6 @@ const getposts = async () => {
         const posts = await response.json();
         console.log(posts);
 
-        document.querySelector('.wallpaper__container').innerHTML += `
-            <div class="wallpaper-img__container">
-                <img class="wallpaper-img" src="${posts[0].better_featured_image.media_details.sizes.woocommerce_single.source_url}" alt="Bedroom with brown wall">
-            </div>
-
-            <div class="wallpaper__text">
-                <h2>${posts[0].title.rendered}</h2>
-                <div class="wallpaper__body-text">
-                    <p class="body-text">${posts[0].content.rendered}</p>
-                </div>
-                <div class="wallpaper__read-more--container">
-                    <p class="read-more">Read more</p>
-                </div>
-            </div>
-            `;
-
         //     $('.multiple-items').slick({
         //         infinite: true,
         //         slidesToShow: 3,

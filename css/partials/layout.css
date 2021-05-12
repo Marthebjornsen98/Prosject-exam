@@ -36,6 +36,10 @@ h3 {
     font-size: 1.125rem;
 }
 
+.body-text__bold {
+    font-weight: var(--bold);
+}
+
 .read-more {
     font-size: 1.125rem;
     font-weight: var(--bold);
