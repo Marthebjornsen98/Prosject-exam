@@ -62,3 +62,16 @@ h3 {
 .space-between {
     margin-top: 150px;
 }
+
+/* Hover states */
+h2:hover {
+    transform: var(--hover-up);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+h3:hover {
+    transform: var(--hover-up);
+    transition: var(--transition);
+    cursor: pointer;
+}

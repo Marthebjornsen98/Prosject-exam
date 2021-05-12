@@ -25,6 +25,13 @@
     font-size: 1.125rem;
 }
 
+.nav__item--white:hover {
+    transform: var(--hover-up);
+    transition: var(--transition);
+    cursor: pointer;
+    font-weight: var(--bold);
+}
+
 .nav__item--white-bold {
     color: var(--white);
     font-size: 1.125rem;
@@ -36,8 +43,22 @@
     font-size: 1.125rem;
 }
 
+.nav__item--black:hover {
+    transform: var(--hover-up);
+    transition: var(--transition);
+    cursor: pointer;
+    font-weight: var(--bold);
+}
+
 .nav__item--black-bold {
     color: var(--black);
     font-size: 1.125rem;
+    font-weight: var(--bold);
+}
+
+.nav__item--black-bold:hover {
+    color: var(--black);
+    font-size: 1.125rem;
+    font-weight: var(--bold);
     font-weight: var(--bold);
 }
