@@ -16,7 +16,7 @@ const getposts = async () => {
 
             document.querySelector('.posts__container').innerHTML += `
                 <div class="posts__content">
-                    <h2>${element.title.rendered}</h2>
+                    <h2 class="medium__header">${element.title.rendered}</h2>
                     <div class="next-paragraph"></div>
                     <p class="body-text">${element.excerpt.rendered}</p>
                 </div>

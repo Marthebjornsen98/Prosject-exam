@@ -1,45 +1,14 @@
-const postsAPI = 'https://api.bjornsendesign.tech/wp-json/wp/v2/posts';
+// $('.multiple-items').slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 3
+// });
 
-// API Call
-const getposts = async () => {
-    try {
-        // document.querySelector('.loading').innerHTML = `
-        // <img src="img/loading-gif.gif" alt="loading gif" />
-        // `;
-
-        const response = await fetch(postsAPI);
-        const posts = await response.json();
-        console.log(posts);
-
-        //     $('.multiple-items').slick({
-        //         infinite: true,
-        //         slidesToShow: 3,
-        //         slidesToScroll: 3
-        //     });
-
-        //     $(document).ready(function () {
-        //         $('.slider').slick({
-        //             setting- name: setting - value
-        //         });
-        // });
-
-
-
-    } catch (error) {
-        // document.querySelector('.alert').innerHTML = showAlert(
-        //     'An error occured',
-        //     'danger'
-        // );
-        console.log(error);
-    } finally {
-        // setTimeout(function () {
-        //     document.querySelector('.alert').innerHTML = ``;
-        // }, 3000);
-        // document.querySelector('.loading').innerHTML = ``;
-    };
-};
-
-getposts()
+// $(document).ready(function () {
+//     $('.slider').slick({
+//         setting- name: setting - value
+//  });
+// });
 
 window.onscroll = function () {
     if (window.scrollY > 800) {
@@ -63,4 +32,4 @@ window.onscroll = function () {
     };
 };
 
-// cam at least it runs :) ^
+// cam at least it runs :) ^!fs
