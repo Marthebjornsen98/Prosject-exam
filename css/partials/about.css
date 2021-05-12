@@ -8,6 +8,11 @@
     width: 100%;
 }
 
+.about-me__header {
+    font-size: 3.125rem;
+    font-weight: var(--bold);
+}
+
 .about-me__text {
     margin-top: 50px;
     width: 90%;

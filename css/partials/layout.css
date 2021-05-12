@@ -15,6 +15,10 @@ body {
     background-repeat: repeat-y repeat-x;
 }
 
+a {
+    color: var(--black);
+}
+
 /* Font tags */
 h1 {
     font-size: 8.125rem;
@@ -22,12 +26,12 @@ h1 {
     line-height: 9rem;
 }
 
-h2 {
+.medium__header {
     font-size: 3.125rem;
     font-weight: var(--bold);
 }
 
-h3 {
+.small__header {
     font-size: 1.5rem;
     font-weight: var(--bold);
 }
@@ -64,13 +68,13 @@ h3 {
 }
 
 /* Hover states */
-h2:hover {
+.medium__header:hover {
     transform: var(--hover-up);
     transition: var(--transition);
     cursor: pointer;
 }
 
-h3:hover {
+.small__header:hover {
     transform: var(--hover-up);
     transition: var(--transition);
     cursor: pointer;

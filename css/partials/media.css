@@ -2,9 +2,38 @@
 @media (max-width: 991px){
     /* Tablet */
 
+    .logo__container {
+        width: 10%;
+    }
+
     .nav__list {
         width: 60%;
         margin-right: 50px;
+    }
+}
+
+@media (max-width: 767px){
+    /* Mobile */
+
+    .logo__container {
+        width: 13%;
+    }
+
+    .nav__list {
+        width: 65%;
+    }
+}
+
+@media (max-width: 500px){
+    /* Small phone */
+
+    .logo__container {
+        width: 15%;
+    }
+
+    .nav__container {
+        width: 95%;
+        left: 40px;
     }
 }
 
@@ -13,7 +42,14 @@
 @media (max-width: 991px){
     /* Tablet */
 
+}
 
+@media (max-width: 767px){
+    /* Mobile */
+
+    .content {
+        margin: 0px 50px 0px 200px;
+    }
 }
 
 /* ABOUT PAGE */
@@ -102,6 +138,14 @@
         height: 270px;
         margin: 20px 0px 0px 0px;
     }
+
+    .social-media__insta {
+        margin-right: 20px;
+    }
+    
+    .social-media__youtube {
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 767px){
@@ -115,6 +159,10 @@
         font-size: 1.5rem;
     }
 
+    .about-me__text {
+        width: 100%;
+    }
+
     .why-interior {
         flex-direction: column;
     }
@@ -123,4 +171,95 @@
         width: 100%;
     }
 
+    .social-media__insta,
+    .social-media__facebook,
+    .social-media__youtube,
+    .social-media__linkedin {
+    width: 100%;
+    height: 200px;
+    }
+}
+
+@media (max-width: 500px){
+    /* Small phone */
+
+    h1 {
+        line-height: 3.5rem;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+    }
+
+    .content {
+        margin: 0px 30px 0px 130px;
+    }
+
+    .beige-box__container,
+    .why-interior__container,
+    .social-media__boxes {
+        margin-top: 100px;
+    }
+
+    .beige-box {
+        margin: 0px 30px 0px 130px;
+        height: 450px;
+    }
+
+    .social-media__two {
+        flex-direction: column;
+        width: 90%;
+    }
+
+}
+
+/* FOOTER SECTION */
+@media (max-width: 991px){
+    /* Tablet */
+
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .footer__categories {
+        margin-top: 50px;
+    }
+
+    .footer__info-logo--container {
+        width: 100%;
+    }
+
+    .footer__categories {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767px){
+    /* Mobile */
+
+    .footer__container {
+        margin: 100px 50px 100px 200px;
+    }
+
+    .footer__categories {
+        flex-direction: column;
+        height: 350px;
+        justify-content: space-between;
+    }
+
+    .footer-logo {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px){
+    /* Small phone */
+
+    footer {
+        margin-top: 100px;
+    }
+
+    .footer__container {
+        margin: 100px 30px 100px 130px;
+    }
 }
