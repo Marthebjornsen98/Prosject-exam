@@ -11,7 +11,11 @@
 }
 
 .logo__container {
-    width: auto;
+    width: 6%;
+}
+
+.logo {
+    width: 100%;
 }
 
 .nav__list {
