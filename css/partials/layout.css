@@ -36,7 +36,8 @@ h1 {
     font-weight: var(--bold);
 }
 
-.body-text {
+.body-text,
+p {
     font-size: 1.125rem;
 }
 

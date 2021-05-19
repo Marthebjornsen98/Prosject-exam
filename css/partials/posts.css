@@ -49,3 +49,22 @@
 .posts-hide {
     display: none;
 }
+
+.see-more__container {
+    margin: 150px 50px 0px 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.see-more__btn {
+    border: solid 4px var(--black);
+    background-color: var(--beige);
+    width: auto;
+    padding: 50px 100px;
+    display: flex;
+    font-size: 3rem;
+}
+
+.see-more__btn:hover {
+    cursor: pointer;
+}

@@ -27,12 +27,13 @@
 }
 
 .wallpaper-img__container {
-    width: 55%;
+    width: 500px;
+    height: 550px;
     margin-right: 80px;
-}
-
-.wallpaper-img {
-    width: 100%;
+    background-image: url(../../img/bedroom-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .wallpaper__text {
@@ -55,6 +56,7 @@
     margin-top: 50px;
 }
 
+/* Slider container */
 .slider__container {
     margin-top: 150px;
 }
@@ -63,16 +65,18 @@
     display: flex;
     width: 100%;
     margin-top: 50px;
-    justify-content: space-between;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .slider__content {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .slider__img {
+    width: 85%;
     border-radius: var(--border-radius);
     margin-bottom: 20px;
 }
@@ -93,23 +97,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--white);
 }
 
 .white-box__text {
-    height: 270px;
-    width: 70%;
-    margin: 0px 0px 0px 100px;
+    height: 250px;
+    width: 75%;
+    margin: 0px 0px 0px 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.white-box__img--container {
-    width: 50%;
-    height: auto;
-}
-
 .white-box__img {
-    width: 100%;
+    width: 50%;
+    height: 600px;
+    background-image: url(../../img/light-and-woody.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

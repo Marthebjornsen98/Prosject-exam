@@ -1,14 +1,31 @@
-// $('.multiple-items').slick({
-//     infinite: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 3
-// });
+$(document).ready(function () {
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+});
 
-// $(document).ready(function () {
-//     $('.slider').slick({
-//         setting- name: setting - value
-//  });
-// });
 
 window.onscroll = function () {
     if (window.scrollY > 800) {
