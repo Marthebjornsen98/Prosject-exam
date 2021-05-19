@@ -181,12 +181,17 @@
     }
 
     .see-more__btn {
-        border: solid 4px var(--black);
-        background-color: var(--beige);
-        width: auto;
         padding: 25px 50px;
-        display: flex;
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px){
+    /* Small phone */
+
+    .see-more__btn {
+        padding: 25px 40px;
+        font-size: 1rem;
     }
 }
 
