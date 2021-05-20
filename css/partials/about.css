@@ -8,11 +8,6 @@
     width: 100%;
 }
 
-.about-me__header {
-    font-size: 3.125rem;
-    font-weight: var(--bold);
-}
-
 .about-me__text {
     margin-top: 50px;
     width: 90%;
@@ -31,14 +26,13 @@
 .beige-box__container {
     width: 100%;
     height: 300px;
+    margin-top: 150px;
     display: flex;
     align-items: center;
-    margin-top: 150px;
     background-color: var(--light-brown);
 }
 
 .beige-box {
-    max-width: 1140px;
     width: 100%;
     margin: 0px 100px 0px 200px;
     display: flex;
@@ -74,7 +68,11 @@
 .social-media__boxes {
     width: 100%;
     margin-top: 150px;
+}
+
+.social-media {
     display: flex;
+    margin-top: 50px;
     justify-content: space-between;
 }
 
@@ -107,15 +105,14 @@
 .social-media__facebook,
 .social-media__youtube,
 .social-media__linkedin {
-    width: 100%;
-    height: 230px;
-    border-radius: var(--border-radius);
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 49%;
+    height: 250px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--border-radius);
 }
 
 .social-media__icon {
