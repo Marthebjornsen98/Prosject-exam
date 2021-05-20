@@ -13,7 +13,7 @@ async function getposts(id) {
 
         document.title = postsSpecific.title.rendered;
 
-        document.querySelector('.background-img__container').innerHTML += `
+        document.querySelector('.post-specific__container').innerHTML += `
             <div class="overlay__container">
                 <div class="overlay">
                     <div class="header__container--specific">
@@ -22,7 +22,7 @@ async function getposts(id) {
                 <div class="background-img"></div>
             </div>
 
-            <div class="content">${postsSpecific.content.rendered}</div>
+            <div class="post-specific">${postsSpecific.content.rendered}</div>
             `;
 
         document.querySelector('.background-img').style.backgroundImage = `url(${postsSpecific.better_featured_image.media_details.sizes.large.source_url})`;
@@ -54,7 +54,7 @@ window.onscroll = function () {
         document.querySelector('.nav__item4').style.color = 'var(--black)';
 
         document.querySelector('.logo__container').innerHTML = `
-            <img class="logo" src="img/logo-black.svg" alt="Illustrative logo with chair, lamp and table">
+        <a href="index.html"><img class="logo" src="img/logo-black.svg" alt="Illustrative logo with chair, lamp and table"></a>
         `;
     } else {
         document.querySelector('.nav__item1').style.color = 'var(--white)';
@@ -63,7 +63,7 @@ window.onscroll = function () {
         document.querySelector('.nav__item4').style.color = 'var(--white)';
 
         document.querySelector('.logo__container').innerHTML = `
-            <img class="logo" src="img/logo-white.svg" alt="Illustrative logo with chair, lamp and table">
+            <a href="index.html"><img class="logo" src="img/logo-white.svg" alt="Illustrative logo with chair, lamp and table"></a>
         `;
     };
 };

@@ -18,6 +18,7 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .header__container--specific {
@@ -27,7 +28,7 @@
 /* Posts from Wordpress */
 
 .specific__container {
-    width: 100%;
+    margin: 0px 100px 0px 200px;
 }
 
 /* First post */
@@ -61,21 +62,51 @@
 
 /* Second post */
 .second-post__content {
-    margin-top: 150px;
+    margin: 150px 0px 0px 200px;
     display: flex;
     justify-content: space-between;
 }
 
 .second-post__text--container {
     width: 100%;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .second-post__img--container {
     margin-top: 20px;
-    width: 100%;
+    width: 90%;
 }
 
 .second__img {
     width: 100%;
+}
+
+.other__posts--container {
+    margin: 150px 100px 0px 200px;
+}
+
+.other__posts {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.other__posts--content {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.other__posts--img {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.description {
+    margin-top: 20px;
 }

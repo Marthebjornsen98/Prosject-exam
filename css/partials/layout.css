@@ -50,6 +50,12 @@ p {
     font-weight: var(--bold);
 }
 
+.read-more:hover {
+    transform: var(--hover-up);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
 .bold {
     font-weight: var(--bold);
 }

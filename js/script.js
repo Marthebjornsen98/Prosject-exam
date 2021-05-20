@@ -34,7 +34,7 @@ function slider() {
             {
                 breakpoint: 991,
                 settings: {
-                    arrows: true,
+                    arrows: false,
                     slidesToShow: 2,
                     slidesToScroll: 2,
                 }
@@ -64,7 +64,7 @@ const sliderImg = async (url) => {
                 document.querySelector('#slider').innerHTML += `
                     <div class="slider__content">
                         <a  href="posts-specific.html?id=${element.id}">
-                            <img src="${element.better_featured_image.media_details.sizes.woocommerce_thumbnail.source_url}">
+                            <img class="slider__img" src="${element.better_featured_image.media_details.sizes.woocommerce_thumbnail.source_url}">
                             <h3 class="small__header">${element.title.rendered}</h3>
                         </a>
                     </div>

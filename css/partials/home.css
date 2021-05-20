@@ -11,7 +11,7 @@
 .header__container {
     width: 70%;
     margin: auto;
-    padding-top: 150px;
+    padding-top: 180px;
 }
 
 .heading__white {
@@ -19,14 +19,14 @@
 }
 
 /* Wallpaper post container */
-.wallpaper__container {
+.home-post__container {
     margin-top: 150px;
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.wallpaper-img__container {
+.home-post__img--wallpaper{
     width: 500px;
     height: 550px;
     margin-right: 80px;
@@ -36,23 +36,17 @@
     background-position: center;
 }
 
-.wallpaper__text {
+.home-post__text {
     width: 60%;
     display: flex;
     flex-direction: column;
 }
 
-.wallpaper__body-text {
+.post__body-text{
     margin-top: 50px;
-    height: auto;
-    justify-content: space-between;
 }
 
-.wallpaper-body-text__container {
-    margin-top: 30px;
-}
-
-.wallpaper__read-more--container {
+.read-more--container {
     margin-top: 50px;
 }
 
@@ -84,33 +78,15 @@
 /* Light and woody container */
 .white {
     max-width: 100%;
-    height: auto;
     display: flex;
-    align-items: center;
-    margin: 150px 100px 0px 0px;
+    align-items: flex-start;
+    margin-top: 150px;
 }
 
-.white-box {
-    height: 409px;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.white-box__text {
-    height: 250px;
-    width: 75%;
-    margin: 0px 0px 0px 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.white-box__img {
-    width: 50%;
-    height: 600px;
+.home-post__img--kitchen {
+    width: 500px;
+    height: 550px;
+    margin-left: 80px;
     background-image: url(../../img/light-and-woody.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
