@@ -23,8 +23,8 @@ async function getImg(url) {
         }
 
     } catch (error) {
-        document.querySelector('.alert') = showAlert(
-            'An error occured, please contact Noroff.no',
+        document.querySelector('.alert').innerHTML = showAlert(
+            'An error occured, please contact The Modern Apartment',
             'danger'
         );
 

@@ -27,16 +27,16 @@ const getposts = async (url) => {
         });
 
     } catch (error) {
-        // document.querySelector('.alert').innerHTML = showAlert(
-        //     'An error occured',
-        //     'danger'
-        // );
+        document.querySelector('.alert').innerHTML = showAlert(
+            'An error occured, please contact The Modern Apartment',
+            'danger'
+        );
         console.log(error);
 
     } finally {
-        // setTimeout(function () {
-        //     document.querySelector('.alert').innerHTML = ``;
-        // }, 3000);
+        setTimeout(function () {
+            document.querySelector('.alert').innerHTML = ``;
+        }, 3000);
 
         document.querySelector('.loading').innerHTML = ``;
     };
