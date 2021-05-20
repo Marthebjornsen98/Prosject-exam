@@ -34,10 +34,52 @@
     </header>
 
     <main>
-        <div class="space-between"></div>
+        <!-- <div class="space-between"></div> -->
         <div class="content">
-            <h1>Contact me</h1>
+            <!-- <h1>Leave a message</h1>
+            <div class="contact__description">
+                <p class="body-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique mauris sit mi
+                    faucibus in diam. Sem blandit sollicitudin pretium vestibulum, cras. Diam ipsum eu sit vel auctor.
+                    Nunc mauris sit et magna aenean dignissim.
+                </p>
+            </div> -->
 
+
+            <div class="alert"></div>
+
+            <div class="contact__container">
+                <h2 class="medium__header--contact">Leave me a message</h2>
+                <div class="next-paragraph"></div>
+                <p class="body-text">
+                    It usually takes 2-3 business days to answer. Your reply will
+                    <span class="next-line"></span>
+                    arrive in your email, remember to check the spam folder.
+                </p>
+
+                <div class="contact-form__container">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Name" id="name" class="contact-form__item">
+                        <p class="body-text__error nameError">Please enter a name over five characters</p>
+
+                        <input type="text" placeholder="Email" id="email" class="contact-form__item">
+                        <p class="body-text__error emailError">Please enter a valid email</p>
+
+                        <input type="text" placeholder="Subject" id="subject" class="contact-form__item">
+                        <p class="body-text__error subjectError">Please enter a subject over 15 characters</p>
+
+                        <div class="subject__container">
+                            <p class="body-text__bold">Message:</p>
+                            <input type="text" id="message" class="contact-form__item">
+                            <p class="body-text__error messageError">Please enter a message over 25 characters</p>
+                        </div>
+                        <div class="submit__cta--container">
+                            <button class="submit__cta">Send!</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
 

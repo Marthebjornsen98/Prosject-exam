@@ -84,6 +84,14 @@ p {
     justify-content: center;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 /* Hover states */
 .medium__header:hover {
     transform: var(--hover-up);
