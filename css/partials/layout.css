@@ -79,6 +79,11 @@ p {
     margin-top: 150px;
 }
 
+.loading {
+    display: flex;
+    justify-content: center;
+}
+
 /* Hover states */
 .medium__header:hover {
     transform: var(--hover-up);

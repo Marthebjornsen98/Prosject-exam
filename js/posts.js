@@ -4,7 +4,7 @@ const postsAPI = 'https://noroffcors.herokuapp.com/https://api.bjornsendesign.te
 const getposts = async (url) => {
     try {
         document.querySelector('.loading').innerHTML = `
-        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_eqkfnpuf.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_rkeqcf7h.json"  background="transparent"  speed="1.5"  style="width: 600px; height: 600px;"  loop  autoplay></lottie-player>
         `;
 
         const response = await fetch(url);

@@ -4,9 +4,9 @@ const id = params.get("id");
 
 async function getposts(id) {
     try {
-        // document.querySelector('.loading').innerHTML = `
-        // <img src="https://cdn.dribbble.com/users/341887/screenshots/4595077/arizdesign.gif"/>
-        // `;
+        document.querySelector('.loading').innerHTML = `
+        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_rkeqcf7h.json"  background="transparent"  speed="1.5"  style="width: 600px; height: 600px;"  loop  autoplay></lottie-player>
+        `;
 
         const response = await fetch('https://noroffcors.herokuapp.com/https://api.bjornsendesign.tech/wp-json/wp/v2/posts/' + id);
         const postsSpecific = await response.json();
