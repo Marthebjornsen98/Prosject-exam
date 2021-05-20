@@ -28,19 +28,19 @@ async function getposts(id) {
         document.querySelector('.background-img').style.backgroundImage = `url(${postsSpecific.better_featured_image.media_details.sizes.large.source_url})`;
 
     } catch (error) {
-        // document.querySelector('.alert') = showAlert(
-        //     'An error occured, please contact Noroff.no',
-        //     'danger'
-        // );
+        document.querySelector('.alert') = showAlert(
+            'An error occured, please contact The Modern Apartment',
+            'danger'
+        );
 
         console.log(error);
 
     } finally {
-        // setTimeout(function () {
-        //     document.querySelector('.alert').innerHTML = '';
-        // }, 3000);
+        setTimeout(function () {
+            document.querySelector('.alert').innerHTML = '';
+        }, 3000);
 
-        // document.querySelector('.loading').innerHTML = ``;
+        document.querySelector('.loading').innerHTML = ``;
     }
 }
 

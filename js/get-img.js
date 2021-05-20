@@ -23,21 +23,18 @@ async function getImg(url) {
         }
 
     } catch (error) {
-        // document.querySelector('.alert') = showAlert(
-        //     'An error occured, please contact Noroff.no',
-        //     'danger'
-        // );
+        document.querySelector('.alert') = showAlert(
+            'An error occured, please contact Noroff.no',
+            'danger'
+        );
 
         console.log(error);
 
     } finally {
-        // setTimeout(function () {
-        //     document.querySelector('.alert').innerHTML = '';
-        // }, 3000);
-
-        // document.querySelector('.loading').innerHTML = ``;
+        setTimeout(function () {
+            document.querySelector('.alert').innerHTML = '';
+        }, 3000);
     }
 }
 
 getImg(postsAPI)
-{/* <p class="body-text">${getImgJson[i].excerpt.rendered}</p> */ }

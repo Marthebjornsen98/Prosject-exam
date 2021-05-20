@@ -80,11 +80,18 @@ const sliderImg = async (url) => {
         slider();
 
     } catch (error) {
-        console.log(error)
+        document.querySelector('.alert') = showAlert(
+            'An error occured, please contact Noroff.no',
+            'danger'
+        );
+
+        console.log(error);
 
     } finally {
-
-    };
+        setTimeout(function () {
+            document.querySelector('.alert').innerHTML = '';
+        }, 3000);
+    }
 };
 
 sliderImg(sliderAPI);
