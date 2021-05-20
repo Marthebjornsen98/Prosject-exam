@@ -50,6 +50,10 @@ p {
     font-weight: var(--bold);
 }
 
+.bold {
+    font-weight: var(--bold);
+}
+
 /* Span tags */
 .next-line {
     display: block;

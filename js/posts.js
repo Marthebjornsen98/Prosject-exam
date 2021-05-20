@@ -14,18 +14,16 @@ const getposts = async (url) => {
         posts.forEach(element => {
             document.querySelector('.posts__container').innerHTML += `
                 <div class="posts__content">
-                    <a href="posts-specific.html?=id=${element.id}">
+                    <a href="posts-specific.html?id=${element.id}">
                         <h2 class="medium__header">${element.title.rendered}</h2>
                     <a>
                     <div class="next-paragraph"></div>
                     <p class="body-text">${element.excerpt.rendered}</p>
                 </div>
                 <div class="posts__img--container posts-img${element.id}"></div>
-                <div class="published">${element.content.rendered}</div>
             `;
 
             document.querySelector(`.posts-img${element.id}`).style.backgroundImage = `url(${element.better_featured_image.media_details.sizes.large.source_url})`;
-
         });
 
     } catch (error) {

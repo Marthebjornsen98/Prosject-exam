@@ -194,7 +194,12 @@
         font-size: 1rem;
     }
 }
+/* POST SPECIFIC PAGE */
+@media (max-width: 991px){
+    /* Tablet */
 
+    
+}
 /* ABOUT PAGE */
 @media (max-width: 1920px){
     /* Wide screen */
@@ -219,6 +224,7 @@
         height: 300px;
     }
 }
+
 @media (max-width: 1440px){
     /* Laptop */
 
@@ -348,7 +354,6 @@
         flex-direction: column;
         width: 90%;
     }
-
 }
 
 /* FOOTER SECTION */

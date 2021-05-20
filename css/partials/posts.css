@@ -12,7 +12,7 @@
 ::placeholder {
     font-size: 1.125rem;
     font-weight: var(--semi-bold);
-    color: rgba(43, 47, 48, 0.5)
+    color: rgba(43, 47, 48, 0.5);
 }
 
 .fa-search {
@@ -44,10 +44,6 @@
 
 .published {
     margin: 30px 0px 0px 200px;
-}
-
-.posts-hide {
-    display: none;
 }
 
 .see-more__container {

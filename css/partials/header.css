@@ -40,12 +40,6 @@
     font-size: 1.125rem;
 }
 
-.nav__item--black-bold {
-    color: var(--black);
-    font-size: 1.125rem;
-    font-weight: var(--bold);
-}
-
 .nav__item--white:hover {
     transform: var(--hover-up);
     transition: var(--transition);
@@ -60,9 +54,6 @@
     font-weight: var(--bold);
 }
 
-.nav__item--black-bold:hover {
-    transform: var(--hover-up);
-    transition: var(--transition);
-    cursor: pointer;
+.nav__item--black:active {
     font-weight: var(--bold);
 }

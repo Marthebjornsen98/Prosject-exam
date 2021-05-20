@@ -1,0 +1,81 @@
+/* Hero banner */
+.overlay__container {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.background-img {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__container--specific {
+    margin: 300px 50px 0px 200px;
+}
+
+/* Posts from Wordpress */
+
+.specific__container {
+    width: 100%;
+}
+
+/* First post */
+.first-post__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-post__text--container {
+    margin-top: 150px;
+}
+
+.first-post__text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.first-post {
+    width: 47%;
+}
+
+.first-post__img--container {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.first__img {
+    width: 100%;
+}
+
+/* Second post */
+.second-post__content {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-post__text--container {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.second-post__img--container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.second__img {
+    width: 100%;
+}
