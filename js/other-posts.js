@@ -1,6 +1,6 @@
 const postsAPI = 'https://noroffcors.herokuapp.com/https://api.bjornsendesign.tech/wp-json/wp/v2/posts';
 
-async function getImg(url) {
+async function otherPosts(url) {
     try {
         const response = await fetch(url);
         const getImgJson = await response.json();
@@ -16,6 +16,7 @@ async function getImg(url) {
                             <h3 class="small__header">${getImgJson[i].title.rendered}</h3>
                         </a>
                         <div class="next-paragraph"></div>
+                        <p class="body-text">${getImgJson[i].excerpt.rendered}</p>
                     </div>
                 </div>
                 `;
@@ -37,4 +38,4 @@ async function getImg(url) {
     }
 }
 
-getImg(postsAPI)
+otherPosts(postsAPI)

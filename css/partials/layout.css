@@ -76,12 +76,17 @@ p {
 }
 
 .space-between {
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 .loading {
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.loading__gif {
+    width: 100%;
 }
 
 .hide {

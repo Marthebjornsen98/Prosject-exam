@@ -1,6 +1,7 @@
 .nav__container {
     width: 88%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     height: 150px;
@@ -11,7 +12,7 @@
 }
 
 .logo__container {
-    width: 6%;
+    width: 7%;
 }
 
 .logo {
@@ -22,6 +23,28 @@
     display: flex;
     width: 40%;
     justify-content: space-between;
+}
+
+.hamburger__white{
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    font-size: 1.875rem;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger__black {
+    background-color: transparent;
+    color: var(--black);
+    border: none;
+    font-size: 1.875rem;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger__white:focus {
+    outline: none;
 }
 
 .nav__item--white {
