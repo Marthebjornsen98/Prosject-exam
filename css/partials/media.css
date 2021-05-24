@@ -315,15 +315,12 @@
     /* Mobile */
 
     .specific__container {
-        margin: 0px 50px 0px 50px;
+        margin: 0px 25px 0px 25px;
     }
 
-    .second-post__content {
-        margin: 150px 50px 0px 50px;
-    }
-
+    .second-post__content,
     .other__posts--container {
-        margin: 150px 50px 0px 50px;
+        margin: 150px 25px 0px 25px;
     }
 
     .other__posts {
