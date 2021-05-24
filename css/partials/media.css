@@ -166,6 +166,10 @@
     .slider {
         padding-left: 0px;
     }
+
+    .slider__img {
+        width: 95%;
+    }
 }
 
 
