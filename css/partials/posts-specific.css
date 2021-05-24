@@ -106,3 +106,27 @@
     background-size: cover;
     background-position: center;
 }
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--opacity);
+}
+  
+.pop-up__img{
+    width: 70%;
+    display: flex;
+    margin: auto;
+}
+
+.overlay__img--container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}

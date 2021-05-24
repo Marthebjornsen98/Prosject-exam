@@ -364,6 +364,10 @@
     .description {
         margin-bottom: 50px;
     }
+
+    .pop-up__img {
+        width: 90%;
+    }
 }
 
 @media (max-width: 767px){

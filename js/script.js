@@ -1,31 +1,3 @@
-function slider() {
-    $('.multiple-items').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        arrows: true,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    });
-};
-
 const sliderAPI = 'https://noroffcors.herokuapp.com/https://api.bjornsendesign.tech/wp-json/wp/v2/posts';
 
 const sliderImg = async (url) => {
@@ -70,3 +42,31 @@ const sliderImg = async (url) => {
 };
 
 sliderImg(sliderAPI)
+
+function slider() {
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+};
