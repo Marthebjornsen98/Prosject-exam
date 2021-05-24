@@ -11,5 +11,10 @@ for (let i = 0; i < navItem.length; i++) {
 
 hamburger.addEventListener('click', () => {
     navList.classList.toggle('showing');
-    nav.classList.toggle('beige');
+
+    if (window.scrollY > 800) {
+        nav.classList.toggle('beige');
+    } else {
+        nav.classList.toggle('transparent');
+    }
 });

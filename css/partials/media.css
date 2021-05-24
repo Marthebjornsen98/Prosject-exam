@@ -120,7 +120,7 @@
     .nav__container {
         width: 100%;
         left: 0px;
-        padding-left: 25px;
+        padding: 20px 0px 30px 25px;
     }
 
     .logo__container {
@@ -162,11 +162,6 @@
 
     .logo__container {
         width: 15%;
-    }
-
-    .nav__container {
-        width: 100%;
-        left: 20px;
     }
 }
 

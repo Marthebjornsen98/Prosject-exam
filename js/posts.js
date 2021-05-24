@@ -20,7 +20,9 @@ const getposts = async (url) => {
                     <div class="next-paragraph"></div>
                     <p class="body-text">${element.excerpt.rendered}</p>
                 </div>
-                <div class="posts__img--container posts-img${element.id}"></div>
+                <a href="posts-specific.html?id=${element.id}">
+                    <div class="posts__img--container posts-img${element.id}"></div>
+                </a>
             `;
 
             document.querySelector(`.posts-img${element.id}`).style.backgroundImage = `url(${element.better_featured_image.media_details.sizes.large.source_url})`;
