@@ -158,6 +158,10 @@
 @media (max-width: 767px){
     /* Mobile */
 
+    .home-post__container {
+        margin-top: 100px;
+    }
+
     .slider {
         padding-left: 0px;
     }
@@ -363,6 +367,7 @@
 
     .about-me__img--container {
         margin-top: 50px;
+        width: 100%;
     }
 
     /* Hobbies */
@@ -403,6 +408,10 @@
 
 @media (max-width: 767px){
     /* Mobile */
+
+    .about-me__img--container {
+        width: 100%;
+    }
 
 }
 
