@@ -12,6 +12,10 @@ async function getposts(id) {
         const postsSpecific = await response.json();
 
         document.title = postsSpecific.title.rendered;
+        document.querySelector('meta[name="description"]').setAttribute(
+            'content',
+            `This blogpost at The Modern Apartment is about ${postsSpecific.title.rendered}`
+        );
 
         document.querySelector('.post-specific__container').innerHTML += `
             <div class="overlay__container">

@@ -1,3 +1,6 @@
+// const nav = document.querySelector('.nav__container');
+// const hamburger = document.querySelector('#hamburger');
+
 window.onscroll = function () {
     if (window.scrollY > 800) {
         document.querySelector('.nav__item1').style.color = 'var(--black)';
@@ -12,6 +15,10 @@ window.onscroll = function () {
         </a>
         `;
 
+        // hamburger.addEventListener('click', () => {
+        //     nav.classList.toggle('beige');
+        // });
+
     } else {
         document.querySelector('.nav__item1').style.color = 'var(--white)';
         document.querySelector('.nav__item2').style.color = 'var(--white)';
@@ -24,6 +31,10 @@ window.onscroll = function () {
             <img class="logo" src="img/logo-white.svg" alt="Illustrative logo with chair, lamp and table">
         </a>
         `;
+
+        // hamburger.addEventListener('click', () => {
+        //     nav.classList.toggle('transparent');
+        // });
     };
 };
 
