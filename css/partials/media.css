@@ -28,7 +28,8 @@
         margin: 0px 0px 0px 80px;
     }
 
-    .medium__header{
+    .medium__header,
+    .medium__header--about{
         font-size: 2rem;
     }
 
