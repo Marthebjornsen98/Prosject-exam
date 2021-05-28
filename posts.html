@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="A page with all the blogposts gathered, enjoy reading about interior.">
@@ -58,71 +55,69 @@
         </div>
     </header>
 
-    <body>
-        <main>
-            <div class="space-between"></div>
-            <div class="content">
-                <div class="loading"></div>
-                <div class="alert"></div>
-                <h1>Posts</h1>
-            </div>
+    <main>
+        <div class="space-between"></div>
+        <div class="content">
+            <div class="loading"></div>
+            <div class="alert"></div>
+            <h1>Posts</h1>
+        </div>
 
-            <div class="posts__container">
-                <div id="search">
-                    <input type="text" name="searchBar" id="searchbar" placeholder="Search for post.." />
-                    <i class="fas fa-search"></i>
+        <div class="posts__container">
+            <div id="search">
+                <input type="text" name="searchBar" id="searchbar" placeholder="Search for post.." />
+                <i class="fas fa-search"></i>
+            </div>
+            <div id="search__list"></div>
+        </div>
+
+        <div class="see-more__container">
+            <button class="see-more__btn">See more posts</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__info-logo--container">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img class="footer-logo__img" src="img/footer-logo.svg"
+                            alt="Illustrative logo with chair, lamp and table">
+                    </a>
                 </div>
-                <div id="search__list"></div>
-            </div>
-
-            <div class="see-more__container">
-                <button class="see-more__btn">See more posts</button>
-            </div>
-        </main>
-
-        <footer>
-            <div class="footer__container">
-                <div class="footer__info-logo--container">
-                    <div class="footer-logo">
-                        <a href="index.html">
-                            <img class="footer-logo__img" src="img/footer-logo.svg"
-                                alt="Illustrative logo with chair, lamp and table">
-                        </a>
-                    </div>
-                    <div class="footer__info">
-                        <p class="body-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique mauris sit mi
-                            faucibus
-                            in diam. Sem blandit sollicitudin pretium vestibulum, cras. Diam ipsum eu sit vel auctor.
-                        </p>
-                    </div>
-                </div>
-                <div class="footer__categories">
-                    <div class="footer__list">
-                        <h3 class="small__heading"><a href="about.html">About me</a></h3>
-                        <p class="footer__item"><a class="footer__item" href="about.html">Why I love interior</a></p>
-                        <p class="footer__item"><a class="footer__item" href="about.html">What´s the blog about</a></p>
-                        <p class="footer__item"><a class="footer__item" href="about.html">Who am I</a></p>
-                    </div>
-                    <div class="footer__list">
-                        <h3 class="small__heading"><a href="contact.html">Contact me</a></h3>
-                        <p class="footer__item"><a class="footer__item" href="contact.html">Mail</a></p>
-                        <p class="footer__item"><a class="footer__item" href="contact.html">Phone</a></p>
-                        <p class="footer__item"><a class="footer__item" href="contact.html">Main Street 10<span
-                                    class="next-line"></span>0155 Oslo</a></p>
-                    </div>
+                <div class="footer__info">
+                    <p class="body-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique mauris sit mi
+                        faucibus
+                        in diam. Sem blandit sollicitudin pretium vestibulum, cras. Diam ipsum eu sit vel auctor.
+                    </p>
                 </div>
             </div>
-        </footer>
-    </body>
+            <div class="footer__categories">
+                <div class="footer__list">
+                    <h3 class="small__heading"><a href="about.html">About me</a></h3>
+                    <p class="footer__item"><a class="footer__item" href="about.html">Why I love interior</a></p>
+                    <p class="footer__item"><a class="footer__item" href="about.html">What´s the blog about</a></p>
+                    <p class="footer__item"><a class="footer__item" href="about.html">Who am I</a></p>
+                </div>
+                <div class="footer__list">
+                    <h3 class="small__heading"><a href="contact.html">Contact me</a></h3>
+                    <p class="footer__item"><a class="footer__item" href="contact.html">Mail</a></p>
+                    <p class="footer__item"><a class="footer__item" href="contact.html">Phone</a></p>
+                    <p class="footer__item"><a class="footer__item" href="contact.html">Main Street 10<span
+                                class="next-line"></span>0155 Oslo</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 
+<!-- Lottie files -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-    <!-- Lottie files -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-    <!-- My script files -->
-    <script src="js/component/alert.js"></script>
-    <script src="js/posts.js"></script>
-    <script src="js/header.js"></script>
+<!-- My script files -->
+<script src="js/component/alert.js"></script>
+<script src="js/posts.js"></script>
+<script src="js/header.js"></script>
 
 </html>
