@@ -8,6 +8,7 @@ const sliderImg = async (url) => {
         const sliderImgResults = await response.json();
         console.log(sliderImgResults)
 
+        // Slider img
         sliderImgResults.forEach(element => {
             if (element.better_featured_image.media_details.sizes.woocommerce_thumbnail.source_url) {
                 document.querySelector('#slider').innerHTML += `
@@ -18,14 +19,12 @@ const sliderImg = async (url) => {
                         </a>
                     </div>
                 `;
-
             } else {
                 document.querySelector('#slider').innerHTML += `
                   <h2>${element.title.rendered}</h2>
                 `;
             }
         });
-
         slider();
 
     } catch (error) {
@@ -45,6 +44,7 @@ const sliderImg = async (url) => {
 
 sliderImg(sliderAPI)
 
+// Slider function
 function slider() {
     $('.multiple-items').slick({
         infinite: true,

@@ -11,7 +11,7 @@ const getposts = async (url) => {
         const postsAPI = await response.json();
         console.log(postsAPI);
 
-
+        // Calling cards
         postsAPI.forEach(element => {
             document.querySelector('.posts__container').innerHTML += `
                 <div class="posts__content">
