@@ -1,17 +1,18 @@
-const postsAPI = 'https://noroffcors.herokuapp.com/https://api.bjornsendesign.tech/wp-json/wp/v2/posts';
+const postsAPI = 'https://noroffcors.herokuapp.com/https://api.bjornsendesign.tech/wp-json/wp/v2/posts?per_page=20';
 
 // API Call
 const getposts = async (url) => {
     try {
         document.querySelector('.loading').innerHTML = `
-        <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_dchle8f3.json"  background="transparent"  speed="1"  style="width: 500px; height: 400px;"  loop  autoplay></lottie-player>
+        <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_dchle8f3.json" background="transparent" speed="1" style="width: 500px; height: 400px;" loop autoplay></lottie-player>
         `;
 
         const response = await fetch(url);
-        const posts = await response.json();
-        console.log(posts);
+        const postsAPI = await response.json();
+        console.log(postsAPI);
 
-        posts.forEach(element => {
+
+        postsAPI.forEach(element => {
             document.querySelector('.posts__container').innerHTML += `
                 <div class="posts__content">
                     <a href="posts-specific.html?id=${element.id}">
@@ -24,7 +25,6 @@ const getposts = async (url) => {
                     <div class="posts__img--container posts-img${element.id}"></div>
                 </a>
             `;
-
             document.querySelector(`.posts-img${element.id}`).style.backgroundImage = `url(${element.better_featured_image.media_details.sizes.large.source_url})`;
         });
 
@@ -46,9 +46,9 @@ const getposts = async (url) => {
 
 getposts(postsAPI);
 
+// See more posts btn
 const seeMoreBtn = document.querySelector('.see-more__btn');
-
-seeMoreBtn.onclick = function () {
-    getposts(postsAPI + `?page=2`);
+seeMoreBtn.onclick = () => {
+    getposts(postsAPI + `?page=12`);
     seeMoreBtn.style.display = 'none';
 };

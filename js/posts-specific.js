@@ -10,12 +10,13 @@ async function getposts(id) {
         const response = await fetch('https://noroffcors.herokuapp.com/https://api.bjornsendesign.tech/wp-json/wp/v2/posts/' + id);
         const postsSpecific = await response.json();
 
+        // Calling the functions
         getPostSpecific(postsSpecific);
         getModal(postsSpecific);
 
+        // Loading, title and meta tags
         loading.innerHTML = `<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_dchle8f3.json" background="transparent" speed="1" style="width: 500px; height: 400px;" loop autoplay></lottie-player>`;
         document.title = postsSpecific.title.rendered;
-
         document.querySelector('meta[name="description"]').setAttribute(
             'content',
             `This blogpost at The Modern Apartment is about ${postsSpecific.title.rendered}`
@@ -26,6 +27,7 @@ async function getposts(id) {
             'An error occured, please contact The Modern Apartment',
             'danger'
         );
+
         console.log(error);
 
     } finally {

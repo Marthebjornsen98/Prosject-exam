@@ -26,6 +26,16 @@
             a.appendChild(r);
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-98N5WZD2BG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-98N5WZD2BG');
+    </script>
 </head>
 
 <body>
@@ -55,11 +65,15 @@
                 <div class="loading"></div>
                 <div class="alert"></div>
                 <h1>Posts</h1>
-                <input id="searchbar" type="text" placeholder="Search for a post.." name="search">
-                <i class="fas fa-search"></i>
             </div>
 
-            <div class="posts__container"></div>
+            <div class="posts__container">
+                <div id="search">
+                    <input type="text" name="searchBar" id="searchbar" placeholder="Search for post.." />
+                    <i class="fas fa-search"></i>
+                </div>
+                <div id="search__list"></div>
+            </div>
 
             <div class="see-more__container">
                 <button class="see-more__btn">See more posts</button>

@@ -1,4 +1,6 @@
 const sliderAPI = 'https://noroffcors.herokuapp.com/https://api.bjornsendesign.tech/wp-json/wp/v2/posts';
+const alert = document.querySelector('.alert');
+const linkHeadingElm = document.querySelector('.home-post__text');
 
 const sliderImg = async (url) => {
     try {
@@ -27,7 +29,7 @@ const sliderImg = async (url) => {
         slider();
 
     } catch (error) {
-        document.querySelector('.alert').innerHTML = showAlert(
+        alert.innerHTML = showAlert(
             'An error occured, please contact The Modern Apartment',
             'danger'
         );
@@ -36,7 +38,7 @@ const sliderImg = async (url) => {
 
     } finally {
         setTimeout(function () {
-            document.querySelector('.alert').innerHTML = '';
+            alert.innerHTML = '';
         }, 3000);
     }
 };

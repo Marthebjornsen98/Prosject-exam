@@ -7,6 +7,16 @@
         margin: 0px 100px 0px 300px;
     }
 
+    .posts__img,
+    .posts__img--search {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #search {
+        margin: 0px 100px 0px 300px;
+    }
+
     .posts__content,
     .other__posts--container {
         margin: 150px 100px 0px 300px;
@@ -28,6 +38,16 @@
     .specific__container,
     .beige-box {
         margin: 0px 100px 0px 200px;
+    }
+
+    #search {
+        margin: 0px 100px 0px 200px;
+    }
+
+    .posts__img,
+    .posts__img--search {
+        width: 100%;
+        margin-top: 30px;
     }
 
     .posts__content,
@@ -76,11 +96,16 @@
     .content {
         margin: 0px 50px;
     }
+
+    #search {
+        margin: 0px 50px 0px 50px;
+    }
 }
 
 @media (max-width: 500px){
     /* Small phone */
 
+    #search,
     .content {
         margin: 0px 25px;
     }
@@ -97,6 +122,20 @@
 
     .small__header {
         font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 300px){
+    /* Really small phone */
+
+    h1,
+    .heading__white {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    .slider__content {
+        margin-bottom: 20px;
     }
 }
 
@@ -521,17 +560,19 @@
 
     .footer__container {
         flex-direction: column;
+        align-items: center;
     }
 
     .footer__categories {
         margin-top: 50px;
+        width: 80%;
+    }
+
+    .footer__info {
+        width: 80%;
     }
 
     .footer__info-logo--container {
-        width: 100%;
-    }
-
-    .footer__categories {
         width: 80%;
     }
 }
@@ -540,17 +581,28 @@
     /* Mobile */
 
     .footer__container {
-        margin: 100px 50px;
+        width: 85%;
+        align-items: flex-start;
     }
 
     .footer__categories {
         flex-direction: column;
-        height: 350px;
+        height: auto;
         justify-content: space-between;
+        margin-top: 0px;
+    }
+
+    .footer__info-logo--container,
+    .footer__info {
+        width: 100%;
     }
 
     .footer-logo {
         width: 50%;
+    }
+
+    .footer__list {
+        margin-top: 50px;
     }
 }
 
