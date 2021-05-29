@@ -5,6 +5,7 @@ const id = params.get("id");
 const loading = document.querySelector('.loading');
 const alert = document.querySelector('.alert');
 
+// API Call
 async function getposts(id) {
     try {
         const response = await fetch('https://noroffcors.herokuapp.com/https://api.bjornsendesign.tech/wp-json/wp/v2/posts/' + id);

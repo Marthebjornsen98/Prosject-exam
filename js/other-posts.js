@@ -1,10 +1,12 @@
 const postsAPI = 'https://noroffcors.herokuapp.com/https://api.bjornsendesign.tech/wp-json/wp/v2/posts';
 
+// API Call
 async function otherPosts(url) {
     try {
         const response = await fetch(url);
         const getImgJson = await response.json();
 
+        // You may also like container
         for (let i = 3; i < 5; i++) {
             document.querySelector('.other__posts').innerHTML += `
                 <div class="other__posts--content">

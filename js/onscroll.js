@@ -1,3 +1,4 @@
+// Changing color and logo when you scroll
 window.onscroll = function () {
     if (window.scrollY > 800) {
         document.querySelector('.nav__item1').style.color = 'var(--black)';
@@ -27,4 +28,4 @@ window.onscroll = function () {
     };
 };
 
-// cam at least it runs :) ^
+// cam, at least it runs :) ^

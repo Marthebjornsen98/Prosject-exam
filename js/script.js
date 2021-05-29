@@ -2,6 +2,7 @@ const sliderAPI = 'https://noroffcors.herokuapp.com/https://api.bjornsendesign.t
 const alert = document.querySelector('.alert');
 const linkHeadingElm = document.querySelector('.home-post__text');
 
+// API Call
 const sliderImg = async (url) => {
     try {
         const response = await fetch(url);

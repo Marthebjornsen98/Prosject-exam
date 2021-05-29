@@ -4,6 +4,7 @@ const searchList = document.querySelector('#search__list');
 const searchBar = document.querySelector('#searchbar');
 let postArray = [];
 
+// Targets the filter
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
     const filteredPosts = postArray.filter((posts) => {
@@ -15,6 +16,7 @@ searchBar.addEventListener('keyup', (e) => {
     displayPosts(filteredPosts);
 });
 
+// API Call
 const loadPosts = async (url) => {
     try {
         const result = await fetch(url);
@@ -22,13 +24,20 @@ const loadPosts = async (url) => {
         displayPosts(postArray);
 
     } catch (error) {
+        // alert.innerHTML = showAlert(
+        //     'An error occured, please contact The Modern Apartment',
+        //     'danger'
+        // );
         console.error(error);
 
     } finally {
-
+        // setTimeout(function () {
+        //     document.querySelector('.alert').innerHTML = '';
+        // }, 3000);
     }
 };
 
+// Displays the posts
 const displayPosts = (posts) => {
     const htmlString = posts.map((posts) => {
         return `

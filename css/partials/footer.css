@@ -1,8 +1,12 @@
 footer {
     margin-top: 150px;
     width: 100%;
-    height: auto;
     background-color: var(--white);
+}
+
+.footer {
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,4 +68,19 @@ footer {
 .fa-instagram {
     font-size: 2rem;
     margin-right: 20px;
+}
+
+.credits__container {
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.credits {
+    display: flex;
+    width: 285px;
+    justify-content: space-between;
 }

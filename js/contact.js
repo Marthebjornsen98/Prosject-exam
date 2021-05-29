@@ -7,6 +7,7 @@ const emailError = document.querySelector('.emailError');
 const subjectError = document.querySelector('.subjectError');
 const messageError = document.querySelector('.messageError');
 
+// CTA button event
 submitCta.onclick = (event) => {
     try {
         event.preventDefault();
