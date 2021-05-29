@@ -14,6 +14,7 @@ header {
     left: 70px;
     position: fixed;
     z-index: 99;
+    /* background-color: var(--beige); */
 }
 
 .logo__container {

@@ -75,6 +75,12 @@
     margin-bottom: 20px;
 }
 
+.slider__img:hover {
+    transform: var(--hover-up);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
 /* Light and woody container */
 .white {
     max-width: 100%;

@@ -107,6 +107,12 @@
     background-position: center;
 }
 
+.other__posts--img:hover {
+    transform: var(--hover-up);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
 .modal__overlay {
     position: fixed;
     top: 0;
@@ -129,4 +135,22 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
+}
+
+.comments,
+.comment__form {
+    margin-top: 150px;
+}
+
+.comments__container,
+.more__comments,
+.comments__container--each {
+    margin-top: 50px;
+}
+
+.more__comments:hover {
+    transform: var(--hover-up);
+    transition: var(--transition);
+    cursor: pointer;
+    font-weight: var(--bold);
 }

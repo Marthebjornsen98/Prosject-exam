@@ -26,12 +26,14 @@ h1 {
     line-height: 9rem;
 }
 
-.medium__header {
+.medium__header,
+.medium__header--static {
     font-size: 3.125rem;
     font-weight: var(--bold);
 }
 
-.small__header {
+.small__header,
+.small__header--static {
     font-size: 1.5rem;
     font-weight: var(--bold);
 }
@@ -43,6 +45,12 @@ p {
 
 .body-text__bold {
     font-weight: var(--bold);
+}
+
+.small-text {
+    font-size: 1rem;
+    font-weight: var(--bold);
+    margin-top: 20px;
 }
 
 .read-more {

@@ -89,7 +89,7 @@
     }
 
     .medium__header,
-    .medium__header--about{
+    .medium__header--static {
         font-size: 2rem;
     }
 
@@ -120,7 +120,8 @@
         margin: 0px 0px 0px 25px;
     }
 
-    .small__header {
+    .small__header,
+    .medium__header--static  {
         font-size: 1.125rem;
     }
 }
