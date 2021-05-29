@@ -20,7 +20,7 @@ async function getposts(id) {
         document.title = postsSpecific.title.rendered;
         document.querySelector('meta[name="description"]').setAttribute(
             'content',
-            `This blogpost at The Modern Apartment is about ${postsSpecific.title.rendered}`
+            `${postsSpecific.title.rendered} is filled with tips and tricks within interior design, and how to make your house your home.`
         );
 
     } catch (error) {
