@@ -618,6 +618,12 @@
     .footer__list {
         margin-top: 50px;
     }
+
+    .credits__container {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding-bottom: 30px;
+    }
 }
 
 @media (max-width: 500px){
@@ -629,5 +635,14 @@
 
     .footer__container {
         margin: 80px 25px;
+    }
+
+    .credits__container {
+        height: 70px;
+    }
+
+    .credits {
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 }
