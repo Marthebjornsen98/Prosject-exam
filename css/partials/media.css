@@ -93,6 +93,11 @@
         font-size: 2rem;
     }
 
+    .comments,
+    .comment__form {
+        margin-top: 100px;
+    }
+
     .content {
         margin: 0px 50px;
     }

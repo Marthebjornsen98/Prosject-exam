@@ -137,6 +137,7 @@
     justify-content: center;
 }
 
+/* Comment section */
 .comments,
 .comment__form {
     margin-top: 150px;
