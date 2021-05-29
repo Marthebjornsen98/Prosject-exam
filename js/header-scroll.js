@@ -13,6 +13,7 @@ for (let i = 0; i < navItem.length; i++) {
 // Hamburger menu, showing and removing the beige on home and posts specific
 hamburger.addEventListener('click', () => {
     navList.classList.toggle('showing');
+    nav.classList.toggle('nav__container--tall');
 
     if (window.scrollY > 800) {
         nav.classList.toggle('beige');

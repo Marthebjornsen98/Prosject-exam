@@ -166,6 +166,14 @@
         width: 100%;
         left: 0px;
         padding: 0px 0px 30px 25px;
+        height: 110px;
+    }
+
+    .nav__container--tall {
+        width: 100%;
+        left: 0px;
+        padding: 0px 0px 30px 25px;
+        height: 140px;
     }
 
     .logo__container {

@@ -13,4 +13,5 @@ for (let i = 0; i < navItem.length; i++) {
 hamburger.addEventListener('click', () => {
     navList.classList.toggle('showing');
     nav.classList.toggle('beige');
+    nav.classList.toggle('nav__container--tall');
 });
