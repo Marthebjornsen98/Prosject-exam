@@ -1,63 +1,90 @@
 #searchbar {
-    margin-top: 50px;
-    width: 70%;
-    height: 55px;
-    border: none;
-    background-color: var(--white);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    padding: 3px 0px 0px 30px;
+  margin-top: 50px;
+  width: 70%;
+  height: 55px;
+  border: none;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 3px 0px 0px 30px;
 }
 
 ::placeholder {
-    font-size: 1.125rem;
-    font-weight: var(--semi-bold);
-    color: rgba(43, 47, 48, 0.5);
+  font-size: 1.125rem;
+  font-weight: var(--semi-bold);
+  color: rgba(43, 47, 48, 0.5);
 }
 
 .fa-search {
-    font-size: 1.5rem;
-    position: relative;
-    top: 2px;
-    right: 60px;
-    color: var(--black);
+  font-size: 1.5rem;
+  position: relative;
+  top: 2px;
+  right: 60px;
+  color: var(--black);
 }
 
 .posts__container {
-    width: 100%;
+  width: 100%;
 }
 
 .posts__content {
-    margin: 150px 100px 0px 200px;
-    width: 50%;
+  margin: 150px 100px 0px 200px;
+  width: 50%;
 }
 
 .posts__img--container {
-    margin-top: 50px;
-    width: 100%;
-    height: 550px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  margin-top: 50px;
+  width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.posts-img__light,
+.posts-img__bedroom,
+.posts-img__mirror,
+.posts-img__bathroom {
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.posts-img__light {
+  background-image: url(../../img/bathroom.jpeg);
+}
+
+.posts-img__bedroom {
+  background-image: url(../../img/bedroom.jpeg);
+}
+
+.posts-img__mirror {
+  background-image: url(../../img/pond-mirror.jpeg);
+}
+
+.posts-img__bathroom {
+  background-image: url(../../img/modern-bathroom-2.jpeg);
 }
 
 .see-more__container {
-    margin: 150px 50px 0px 200px;
-    display: flex;
-    justify-content: center;
+  margin: 150px 50px 0px 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .see-more__btn {
-    width: 650px;
-    height: 180px;
-    font-size: 3rem;
-    font-weight: var(--bold);
-    border: solid 4px var(--black);
-    background-color: var(--beige);
+  width: 650px;
+  height: 180px;
+  font-size: 3rem;
+  font-weight: var(--bold);
+  border: solid 4px var(--black);
+  background-color: var(--beige);
 }
 
 .see-more__btn:hover {
-    cursor: pointer;
-    transform: var(--hover-up);
-    transition: var(--transition);
+  cursor: pointer;
+  transform: var(--hover-up);
+  transition: var(--transition);
 }
